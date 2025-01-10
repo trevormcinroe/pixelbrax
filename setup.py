@@ -34,7 +34,6 @@ setup(
     license="Apache 2.0",
     packages=find_packages(),
     include_package_data=True,
-    scripts=["bin/learn"],
     install_requires=[
         "trimesh",
         "typing-extensions",
