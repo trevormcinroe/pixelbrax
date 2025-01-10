@@ -49,6 +49,6 @@ setup(
         "Programming Language :: Python",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
-    keywords="JAX reinforcement learning rigidbody physics",
+    keywords="...",
 )
 
