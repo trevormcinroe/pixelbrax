@@ -16,7 +16,7 @@ from ..geometry import Camera, normalise, to_homogeneous
 from ..shader import ID, MixerOutput, PerFragment, PerVertex, Shader
 from ..types import BoolV, Colour, LightSource, Texture, Vec2f, Vec3f, Vec4f
 
-jax.config.update("jax_array", True)  # pyright: ignore[reportUnknownMemberType]
+jax.config.update("jax_array", True) if "jax_array" in jax.config.values else None  # pyright: ignore[reportUnknownMemberType]
 
 
 class PhongTextureExtraInput(NamedTuple):

@@ -1,0 +1,1 @@
+Place the (unzipped) [DAVIS DATASET](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip) here to use video distractors.

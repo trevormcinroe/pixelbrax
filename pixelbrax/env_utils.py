@@ -31,12 +31,12 @@ from brax.training.types import PRNGKey
 from flax import struct
 import flax
 
-from renderer import CameraParameters as Camera
-from renderer import LightParameters as Light
-from renderer import Model as RendererMesh
-from renderer import ModelObject as Instance
-from renderer import ShadowParameters as Shadow
-from renderer import (
+from pixelbrax.renderer import CameraParameters as Camera
+from pixelbrax.renderer import LightParameters as Light
+from pixelbrax.renderer import Model as RendererMesh
+from pixelbrax.renderer import ModelObject as Instance
+from pixelbrax.renderer import ShadowParameters as Shadow
+from pixelbrax.renderer import (
     Renderer,
     UpAxis,
     create_capsule,
@@ -1130,7 +1130,7 @@ def make_pixel_brax(
                 pixels=next_frames,
                 info=raw_next_states.info,
                 key=key,
-                frame_idx=frame_idx,
+                frame_idx=frame_idx.astype(jnp.int8),
             )
 
 
@@ -1279,7 +1279,7 @@ def make_pixel_brax(
                 pixels=next_frames,
                 info=raw_next_states.info,
                 key=key,
-                frame_idx=frame_idx,
+                frame_idx=frame_idx.astype(jnp.int8),
             )
     
     if not experimental:

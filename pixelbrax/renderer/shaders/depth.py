@@ -14,7 +14,7 @@ from ..geometry import Camera, to_homogeneous
 from ..shader import ID, PerVertex, Shader
 from ..types import Vec4f
 
-jax.config.update("jax_array", True)  # pyright: ignore[reportUnknownMemberType]
+jax.config.update("jax_array", True) if "jax_array" in jax.config.values else None  # pyright: ignore[reportUnknownMemberType]
 
 
 class DepthExtraInput(NamedTuple):
