@@ -25,14 +25,6 @@ pip install mujoco-mjx==3.2.6
 pip install mujoco==3.2.6
 ```
 
-_TODO: add `brax_for_pixels` as a submodule or folder named `brax` in this repo. Then the step below won't be necessary._
-
-You need to download our custom version of Brax from: `https://github.com/trevormcinroe/brax_for_pixels`.
-The easiest way to connect brax with your training code is to add its path to your `.bashrc`:
-```bash
-export PYTHONPATH="${PYTHONPATH}:${HOME}/brax_for_pixels"
-```
-
 Download the DAVIS dataset:
 
 ```
