@@ -19,10 +19,7 @@ pip install .
 
 If you still have missing packages, or you encounter mujoco/mjx related errors, try the following. Be mindful of the order of `mujoco-mjx` and `mujoco` installations. If not respected, `mujoco-mjx` may override the correct `mujoco` version.
 ```
-pip install brax
-pip uninstall brax
 pip install mujoco-mjx==3.2.6
-pip install mujoco==3.2.6
 ```
 
 Download the DAVIS dataset:
